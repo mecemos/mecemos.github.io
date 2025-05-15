@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      padding: 20px;
+      white-space: pre-wrap;
+    }
+    a {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <div id="postContent">Loading post...</div>
+  <p><a href="poemario_prueba.html">← Back to blog</a></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const postName = params.get('post');
+
+    if (postName) {
+      fetch(`posts/${postName}.txt`)
+        .then(response => {
+          if (!response.ok) throw new Error("Not found");
+          return response.text();
+        })
+        .then(text => {
+          document.getElementById('postContent').textContent = text;
+          document.title = postName;
+        })
+        .catch(err => {
+          document.getElementById('postContent').textContent = "Post not found.";
+        });
+    } else {
+      document.getElementById('postContent').textContent = "No post selected.";
+    }
+  </script>
+</body>
+</html>

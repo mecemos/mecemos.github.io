@@ -1,0 +1,123 @@
+body{
+    font-family: "VT323", system-ui;
+    /* font-family: "Courier New", monospace; */
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    background-image: url('backgrounds/pattern\ 315.gif');
+    /* background-image: url('backgrounds/misc056.gif'); */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.body_espiritualidad{
+    font-family: "VT323", system-ui;
+    /* font-family: "Courier New", monospace; */
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #593703;
+    background-image: url('backgrounds/misc245_edit.jpg');
+    /* background-image: url('backgrounds/misc056.gif'); */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.body_articulos{
+    font-family: "VT323", system-ui;
+    /* font-family: "Courier New", monospace; */
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    background-image: url('backgrounds/tinosl.jpg');
+    /* background-image: url('backgrounds/misc056.gif'); */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+
+
+.body_poema{
+    font-family: "VT323", system-ui;
+    /* font-family: "Courier New", monospace; */
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    background-image: url('backgrounds/natfl375.jpg');
+    /* background-image: url('backgrounds/misc056.gif'); */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.epigraph {
+    font-style: italic;
+    text-align: right;
+    margin: 2em;
+    padding: 1em;
+}
+.epigraph .author {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+#title{
+    font-family: "Jacquard 24", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+#content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#button{
+    display: inline-block;
+    image-rendering: pixelated;
+}
+@media screen and (max-width: 1080px) {
+	#content{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+#blog_image_block{
+	display: inline-block;
+}
+
+#blog_image{
+	width: 400px;
+	max-width: 100%;
+}
+.center{
+	text-align: center;
+}
+#blog_code_block {
+	background-color: #efd9dc;
+}
+
+/* dark mode support be happy */
+
+/* @media screen and (prefers-color-scheme: dark) {
+    body {
+	background-color: #000000;
+		color: #ffffff;
+		a:link {
+			color: #38caff;
+		}
+		a:visited {
+			color: #d144ff;
+		}
+	}
+	#blog_code_block {
+		background-color: #101010;
+	}
+} */
